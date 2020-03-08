@@ -8,6 +8,103 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    
+    <!-- Menu section -->
+    <div id="menu">
+        <ul id="menuButtons">
+            <li class="menuButton">
+                <img src="icons/icon_web.svg">
+                <p class="menuText">projects</p>
+            </li>
+            <li class="menuButton">
+                <img src="icons/icon_person.svg">
+                <p class="menuText">about</p>
+            </li>
+            <li class="menuButton">
+                <img src="icons/icon_email.svg">
+                <p class="menuText">contact</p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Container -->
+    <div id="container">
+        <!-- Top section -->
+        <div id="topSection">
+            <p class="smallTitle">
+                My name is Johannes
+            </p>
+            <p class="mainTitle">
+                I build interactive web experiences
+            </p>
+            <button class="button largeButton">
+                Get in touch
+            </button>
+        </div>
+
+        <!-- Projects section -->
+        <div id="projectSection">
+            <p class="sectionTitle">
+                Projects
+            </p>
+            <ul id="projectList">
+                <li class="project">
+                    <p class="projectTitle">iClean UF</p>
+                    <img class="projectPreview" src="resources/project_preview.svg">
+                    <a class="projectLink" href="">
+                        <button class="button smallButton">View live</button>
+                    </a>
+                    <a class="projectLink" href="">
+                        <button class="button smallButton">View code</button>
+                    </a>
+                </li>
+                <li class="project">
+                    <p class="projectTitle">Satisfacty</p>
+                    <img class="projectPreview" src="resources/project_preview.svg">
+                    <a class="projectLink" href="">
+                        <button class="button smallButton">View live</button>
+                    </a>
+                    <a class="projectLink" href="">
+                        <button class="button smallButton">View code</button>
+                    </a>
+                </li>
+                <li class="project">
+                    <p class="projectTitle">Book journal</p>
+                    <img class="projectPreview" src="resources/project_preview.svg">
+                    <a class="projectLink" href="">
+                        <button class="button smallButton">View live</button>
+                    </a>
+                    <a class="projectLink" href="">
+                        <button class="button smallButton">View code</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- About section -->
+        <div id="aboutSection">
+            <p class="sectionTitle">
+                About
+            </p>
+            <p class="aboutBody">
+                My name is Johannes, and I am an 18 year old web developer from Sweden. I have been developing software experiences since I was 12 years old.
+                <br><br>
+                Nowadays my project are mostly on the web working with Node.js and Vue, but I also have experience with C#, Python, as well as Arduino. 
+                <br><br>
+                In high school I have studied Programming 1, and am currently studying Programming 2 and Web Development 1.
+            </p>
+            <button class="button largeButton">
+                View resume
+            </button>
+        </div>
+
+        <!-- Contact section -->
+        <div id="contactSection">
+            <p class="sectionTitle">
+                Contact
+            </p>
+            <p id="email">some@email.com</p>
+            <p id="linkedIn">Link to LinkedIn</p>
+        </div>
+    </div>
 </body>
 </html>
