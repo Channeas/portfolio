@@ -4,106 +4,176 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta name="theme-color" content="#0096F9"/>
+    <title>Johannes Idarsson</title>
+
+    <!-- Fonts -->
+    <!-- Is Open Sans regular used???? -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Favicon code -->
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/favicon/favicon-16x16.png">
+    <link rel="manifest" href="resources/favicon/site.webmanifest">
+    <link rel="mask-icon" href="resources/favicon/safari-pinned-tab.svg" color="#0096f9">
+    <link rel="shortcut icon" href="resources/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-config" content="resources/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Linkedin badge code -->
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 </head>
 <body>
-    <!-- Menu section -->
-    <div id="menu">
-        <ul id="menuButtons">
-            <li class="menuButton">
-                <img src="icons/icon_web.svg">
-                <p class="menuText">projects</p>
+    <!-- Mobile menu section -->
+    <div id="mobileMenu">
+        <ul id="mobileMenuButtons">
+            <li class="mobileMenuButton">
+                <a class="mobileMenuLink" href="#projectSection" draggable="false">
+                    <img class="mobileMenuIcon" src="icons/icon_web.svg" alt="Menu button - projects icon" draggable="false">
+                    <p class="mobileMenuText">projects</p>
+                </a>
             </li>
-            <li class="menuButton">
-                <img src="icons/icon_person.svg">
-                <p class="menuText">about</p>
+            <li class="mobileMenuButton">
+                <a class="mobileMenuLink" href="#aboutSection" draggable="false">
+                    <img class="mobileMenuIcon" src="icons/icon_person.svg" alt="Menu button - about icon" draggable="false">
+                    <p class="mobileMenuText">about</p>
+                </a>
             </li>
-            <li class="menuButton">
-                <img src="icons/icon_email.svg">
-                <p class="menuText">contact</p>
+            <li class="mobileMenuButton">
+                <a class="mobileMenuLink" href="#contactSection" draggable="false">
+                    <img class="mobileMenuIcon" src="icons/icon_email.svg" alt="Menu button - contact icon" draggable="false">
+                    <p class="mobileMenuText">contact</p>
+                </a>
             </li>
         </ul>
+    </div>
+
+    <!-- Desktop menu section -->
+    <div id="desktopMenu">
+        <div id="desktopMenuContainer">
+            <p id="desktopMenuLogo">
+                <a class="desktopMenuLink" href="#topSection">
+                    Johannes Idarsson
+                </a>
+            </p>
+            <ul id="desktopMenuButtons">
+                <li class="desktopMenuButton">
+                    <a class="desktopMenuLink" href="#projectSection">
+                        Projects
+                    </a>
+                </li>
+                <li class="desktopMenuButton">
+                    <a class="desktopMenuLink" href="#aboutSection">
+                        About
+                    </a>
+                </li>
+                <li class="desktopMenuButton">
+                    <a class="desktopMenuLink" href="#contactSection">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 
     <!-- Container -->
     <div id="container">
         <!-- Top section -->
         <div id="topSection">
-            <p class="smallTitle">
-                My name is Johannes
-            </p>
-            <p class="mainTitle">
-                I build interactive web experiences
-            </p>
-            <button class="button largeButton">
-                Get in touch
-            </button>
+            <div id="topSectionPosition">
+                <div id="topSectionWidth">
+                    <p class="smallTitle">
+                        My name is Johannes Idarsson
+                    </p>
+                    <p class="mainTitle">
+                        I build interactive web experiences
+                    </p>
+                    <a class="buttonLink" tabindex="-1" href="#contactSection">
+                        <button class="button largeButton">
+                            Get in touch
+                        </button>
+                    </a>
+                </div>
+            </div>
         </div>
 
         <!-- Projects section -->
-        <div id="projectSection">
+        <div id="projectSection" class="section">
             <p class="sectionTitle">
                 Projects
             </p>
             <ul id="projectList">
                 <li class="project">
                     <p class="projectTitle">iClean UF</p>
-                    <img class="projectPreview" src="resources/project_preview.svg">
-                    <a class="projectLink" href="">
-                        <button class="button smallButton">View live</button>
-                    </a>
-                    <a class="projectLink" href="">
-                        <button class="button smallButton">View code</button>
-                    </a>
+                    <img class="projectPreview" src="resources/project_preview.svg" alt="Project preview 1 - iClean UF website">
+                    <div class="projectButtons">
+                        <a class="projectLink buttonLink" tabindex="-1" href="">
+                            <button class="button smallButton">View live</button>
+                        </a>
+                        <a class="projectLink buttonLink" tabindex="-1" href="">
+                            <button class="button smallButton hollowButton">View code</button>
+                        </a>
+                    </div>
                 </li>
                 <li class="project">
                     <p class="projectTitle">Satisfacty</p>
-                    <img class="projectPreview" src="resources/project_preview.svg">
-                    <a class="projectLink" href="">
-                        <button class="button smallButton">View live</button>
-                    </a>
-                    <a class="projectLink" href="">
-                        <button class="button smallButton">View code</button>
-                    </a>
+                    <img class="projectPreview" src="resources/project_preview.svg" alt="Project preview 2 - Satisfacty">
+                    <div class="projectButtons">
+                        <a class="projectLink buttonLink" tabindex="-1" href="">
+                            <button class="button smallButton">View live</button>
+                        </a>
+                        <a class="projectLink buttonLink" tabindex="-1" href="">
+                            <button class="button smallButton hollowButton">View code</button>
+                        </a>
+                    </div>
                 </li>
                 <li class="project">
                     <p class="projectTitle">Book journal</p>
-                    <img class="projectPreview" src="resources/project_preview.svg">
-                    <a class="projectLink" href="">
-                        <button class="button smallButton">View live</button>
-                    </a>
-                    <a class="projectLink" href="">
-                        <button class="button smallButton">View code</button>
-                    </a>
+                    <img class="projectPreview" src="resources/project_preview.svg" alt="Project preview 3 - book journal">
+                    <div class="projectButtons">
+                        <a class="projectLink buttonLink" tabindex="-1" href="">
+                            <button class="button smallButton">View live</button>
+                        </a>
+                        <a class="projectLink buttonLink" tabindex="-1" href="abc">
+                            <button class="button smallButton hollowButton">View code</button>
+                        </a>
+                    </div>
                 </li>
             </ul>
         </div>
 
         <!-- About section -->
-        <div id="aboutSection">
+        <div id="aboutSection" class="section">
             <p class="sectionTitle">
                 About
             </p>
-            <p class="aboutBody">
+            <p id="aboutBody">
                 My name is Johannes, and I am an 18 year old web developer from Sweden. I have been developing software experiences since I was 12 years old.
                 <br><br>
                 Nowadays my project are mostly on the web working with Node.js and Vue, but I also have experience with C#, Python, as well as Arduino. 
                 <br><br>
-                In high school I have studied Programming 1, and am currently studying Programming 2 and Web Development 1.
+                In high school I have studied Programming 1, and I am currently studying Programming 2 and Web Development 1.
             </p>
-            <button class="button largeButton">
+            <button class="button smallButton">
                 View resume
             </button>
         </div>
 
         <!-- Contact section -->
-        <div id="contactSection">
+        <div id="contactSection" class="section">
             <p class="sectionTitle">
                 Contact
             </p>
-            <p id="email">some@email.com</p>
-            <p id="linkedIn">Link to LinkedIn</p>
+            <p id="linkedIn">Reach out to me on LinkedIn</p>
+
+            <!-- LinkedIn profile embed -->
+            <div id="linkedInContainer">
+                <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="sv_SE" data-type="horizontal" data-theme="light" data-vanity="johannes-idarsson-2154a51a3"><a class="LI-simple-link" href='https://se.linkedin.com/in/johannes-idarsson-2154a51a3?trk=profile-badge'>Johannes Idarsson</a></div>
+            </div>            
         </div>
     </div>
 </body>

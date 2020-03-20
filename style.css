@@ -1,1 +1,418 @@
+html {
+    scroll-behavior: smooth;
+}
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* General styling */
+/* Text types */
+.mainTitle {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.smallTitle {
+    font-size: 20px;
+}
+
+/* Button styling */
+.button {
+    background-color: #0096F9;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    border: 2px solid #0096F9;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s all;
+    transition: cubic-bezier(.17,.67,.83,.67) 0.1s all;
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+}
+
+.button:focus, .buttonLink:focus > .button {
+    outline: none;
+    border-color: #0078C7;
+}
+
+.button:hover {
+    background-color: #0087E0;
+    border-color: #0087E0;
+    color: #FFF;
+}
+
+.button:active {
+    transform: translateY(3px);
+    box-shadow: none;
+    background-color: #0087E0;
+    border-color: #0087E0;
+    color: #FFF;
+}
+
+.largeButton {
+    font-size: 18px;
+    padding: 10px 34px;
+}
+
+.smallButton {
+    font-size: 16px;
+    padding: 8px 22px;
+}
+
+.hollowButton {
+    background-color: #FFF;
+    color: #0096F9; 
+}
+
+.buttonLink:focus {
+    outline: none;
+}
+
+/* Mobile menu */ 
+#mobileMenu {
+    height: 56px;
+    width: 100%;
+    position: fixed;
+    z-index: 10000000;
+    bottom: 0;
+    background-color: #0096F9;
+}
+
+#mobileMenuButtons {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 10%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: inherit;
+}
+
+.mobileMenuButton {
+    width: 30%;
+    max-width: 60px;
+    height: inherit;
+    text-align: center;
+    position: relative;
+}
+
+.mobileMenuLink {
+    text-decoration: none;
+    display: block;
+    height: inherit;
+    transition: cubic-bezier(.17,.67,.83,.67) 0.1s all;
+}
+
+.mobileMenuLink:active {
+    transform: translateY(3px);
+}
+
+.mobileMenuIcon {
+    margin-top: 4px;
+}
+
+.mobileMenuText {
+    margin: 0;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: lighter;
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Desktop menu */
+#desktopMenu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #0096F9;
+    z-index: 10000;
+}
+
+#desktopMenuContainer {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+}
+
+#desktopMenuLogo {
+    color: #FFF;
+    display: inline-block;
+}
+
+#desktopMenuButtons {
+    list-style-type: none;
+    padding: 0;
+    float: right;
+}
+
+.desktopMenuButton {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.desktopMenuLink {
+    color: #FFF;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: cubic-bezier(.17,.67,.83,.67) 0.1s all;
+}
+
+.desktopMenuLink:active {
+    transform: translateY(3px);
+}
+
+/* Container */
+
+#container {
+    padding-bottom: 60px;
+}
+
+/* General section styling */
+.section {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 120px;
+    padding: 0 10%;
+}
+
+.section:last-of-type {
+    margin-bottom: 0;
+}
+
+.sectionTitle {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+/* Top section */
+#topSection {
+    height: 100vh;
+    text-align: center;
+}
+
+#topSectionPosition {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#topSectionWidth {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+}
+
+#topSection .mainTitle {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#topSection .smallTitle {
+    margin: 0;
+}
+
+#topSection .button {
+    margin-top: 10px;
+}
+
+/* Project section */
+#projectList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.project {
+    padding: 40px 0;
+}
+
+.project:first-of-type {
+    padding-top: 0;
+}
+
+.project:last-of-type {
+    padding-bottom: 0;
+}
+
+.projectTitle {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.projectPreview {
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 400px;
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.2);
+}
+
+.projectLink {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* Contact section */
+#contactSection {
+    padding-bottom: 5vh;
+}
+
+#linkedInContainer {
+    width: 280px;
+    margin: auto;
+    text-align: left;
+}
+
+/* Responsiveness */
+@media(min-width: 700px) {
+    #mobileMenu {
+        display: none;
+    }
+
+    #desktopMenu {
+        display: block;
+    }
+
+    #topSection {
+        text-align: left;
+    }
+
+    /* Text types responsive styling */
+    .mainTitle {
+        font-size: 42px;
+    }
+
+    .smallTitle {
+        font-size: 24px;
+    }
+
+    /* Section responsive styling */
+    .section {
+        padding: unset;
+        width: 80%;
+        max-width: 800px;
+        text-align: left;
+    }
+
+    .sectionTitle {
+        margin-bottom: 0px;
+    }
+
+    #projectSection .sectionTitle {
+        margin-bottom: 20px;
+    }
+
+    #aboutBody, #linkedIn {
+        margin-top: 0;
+    }
+
+    /* Project list responsive styling */
+    .project {
+        overflow: hidden;
+
+        /* Project preview shadow bug fix */
+        margin-left: -20px;
+        padding-left: 20px;
+    }
+
+    .projectTitle {
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    .projectPreview {
+        width: 55%;
+        margin: 0;
+        float: left;
+    }
+
+    .projectButtons {
+        display: inline-block;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    #linkedInContainer {
+        margin: unset;
+    }
+}
+
+@media(min-width: 800px) {
+    /* Text types responsive styling */
+    .mainTitle {
+        font-size: 70px;
+        margin-top: 0.2em;
+        margin-bottom: 0.2em;
+    }
+
+    .smallTitle {
+        font-size: 30px;
+    }
+
+    /* Button responsive styling*/
+    .largeButton {
+        font-size: 22px;
+    }
+
+    .smallButton {
+        font-size: 18px;
+    }
+
+    /* Section responsive styling */
+    .sectionTitle {
+        font-size: 45px;
+    }
+
+    /* Project section responsive styling */
+    .projectTitle {
+        font-size: 24px;
+        margin-right: 100px;
+    }
+
+
+    #aboutBody {
+        font-size: 20px;
+    }
+
+    #linkedIn {
+        font-size: 20px;
+    }
+}
+
+@media(min-width: 900px) {
+    .project {
+        padding: 60px 0;
+        padding-left: 20px;
+    }
+
+    .projectTitle {
+        margin-left: 30px;
+    }
+
+    .projectButtons {
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    .projectButtons .hollowButton {
+        margin-left: 10px;
+    }
+}
